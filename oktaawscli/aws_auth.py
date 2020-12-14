@@ -183,6 +183,8 @@ of roles assigned to you.""" % self.role)
 
     def __create_options_from(self, roles, assertion, lookup=False):
         options = []
+        print(roles)
+        print(assertion)
         for index, role in enumerate(roles):
             if lookup:
                 self.logger.debug("Performing AWS account alias lookup")

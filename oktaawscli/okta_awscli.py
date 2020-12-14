@@ -66,7 +66,7 @@ def console_output(access_key_id, secret_access_key, session_token, verbose):
         "export AWS_SECRET_ACCESS_KEY=%s" % secret_access_key,
         "export AWS_SESSION_TOKEN=%s" % session_token
     ])
-    print(exports)
+    print(exports, file=sys.stderr)
 
     return exports
 
